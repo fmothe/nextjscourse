@@ -6,8 +6,8 @@ import { Navbar } from "../components/Navbar";
 
 export default function HomePage() {
     return (
-        <>
-            <h1>Home PAge</h1>
+        <MainLayout>
+            <h1>Home Page</h1>
             <h1 className={"title"}>
                 {" "}
                 Ir a <Link href="/about">About</Link>
@@ -17,14 +17,6 @@ export default function HomePage() {
                 Get started by editing{" "}
                 <code className={"code"}>pages/index.js</code>
             </p>
-        </>
-    );
-}
-
-HomePage.getLayout = function getLayout(page) {
-    return (
-        <MainLayout>
-            {page}
         </MainLayout>
     );
 }
